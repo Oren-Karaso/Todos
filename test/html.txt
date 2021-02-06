@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books are great</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()">
+    <section class="main-container">
+        <button onclick="onAddBook()" class="new-book">Add a book</button>
+        <div class="books-table">
+        </div>
+        <div class="modal">
+            <h2>Book Details</h2>
+            <h3>Name:<span class="span1">y</span><br>
+                 Price:<span class="span2">x</span></h3>
+            <div class="about">
+                <img src="">
+                <p></p>
+                <div class="insert-review">
+                    <form onsubmit="onAddReview(event)">
+                        <input type="number" placeholder="review 1-10" max="10" min="1"name="review">
+                        <button class="btn">Save</button>
+                        <button onclick="onCloseModal()" class="btn">Close</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="js/util-services.js"></script>
+    <script src="js/storage-services.js"></script>
+    <script src="js/books-services.js"></script>
+    <script src="js/books-controller.js"></script>
+</body>
+
+</html>
